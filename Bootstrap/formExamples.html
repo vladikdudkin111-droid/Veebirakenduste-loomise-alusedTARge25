@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="my-5">Forms:</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Inputs</h3>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail" class="form-label">Email address</label>
+                        <input 
+                            type="email"
+                            class="form-control"
+                            id="exampleInputEmail"
+                            placeholder="name@example.com"
+                        />
+                        <div id="emailHelp" class="form-text">
+                            We'll never share your email with anyone else.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="exampleInputPassword" class="form-label">Password</label>
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="exampleInputPassword"
+                            placeholder="Enter your password"
+                        />
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="exampleCheck1"
+                        />
+                        <label
+                            class="form-check-label"
+                            for="exampleCheck1">
+                            Check me out
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <h3>Radio/checkboxes</h3>
+
+                <div class="form-check">
+                    <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="checkbox1"
+                    />
+                    <label for="checkbox1" class="form-check-label">
+                        Check me out
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="checkbox1"
+                        checked
+                    />
+                    <label for="checkbox1" class="form-check-label">
+                        Checked checkbox
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="parentCheck"
+                    />
+                    <label for="parentCheck" class="form-check-label">
+                        Indeterminate checkbox, select all
+                    </label>
+                </div>
+                
+                <div class="ms-3 mt-2">
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            class="form-check-input child-check"
+                            id="c1"
+                        />
+                        <label for="c1" class="form-check-label">
+                            Option 1
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            class="form-check-input child-check"
+                            id="c2"
+                        />
+                        <label for="c2" class="form-check-label">
+                            Option 2
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-check">
+                    <input
+                        type="radio"
+                        class="form-check-input"
+                        name="radioDefault"
+                        id="radioDefault"
+                    />
+                    <label for="radioDefault" class="form-check-label">
+                        Default Radio
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input
+                        type="radio"
+                        class="form-check-input"
+                        name="radioDefault"
+                        id="radioDefault2"
+                        checked
+                    />
+                    <label for="radioDefault2" class="form-check-label">
+                        Default checked Radio
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input
+                        type="radio"
+                        class="form-check-input"
+                        name="radioDefault"
+                        id="radioDefault3"
+                        disabled checked
+                    />
+                    <label for="radioDefault3" class="form-check-label">
+                        Default disabled checked Radio
+                    </label>
+                </div>
+
+                <div class="form-check form-switch">
+                    <input
+                        type="checkbox"
+                        class="form-check-input"
+                        name="flexRadioDefault"
+                        id="switchRadioDefault"
+                        disabled checked
+                    />
+                    <label for="switchRadioDefault" class="form-check-label">
+                        Disabled checked switch checkbox inputRadio
+                    </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input
+                        type="checkbox"
+                        class="form-check-input"
+                        name="radioDefault"
+                        id="inlineDefault1"
+                        value="option1"
+                    />
+                    <label for="inlineDefault1" class="form-check-label">
+                        Inline checkbox 1
+                    </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input
+                        type="checkbox"
+                        class="form-check-input"
+                        name="radioDefault"
+                        id="inlineDefault2"
+                        value="option2"
+                    />
+                    <label for="inlineDefault2" class="form-check-label">
+                        Inline checkbox 2
+                    </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input
+                        type="checkbox"
+                        class="form-check-input"
+                        name="radioDefault"
+                        id="inlineDefault3"
+                        value="option3"
+                        disabled
+                    />
+                    <label for="inlineDefault3" class="form-check-label">
+                        Inline checkbox 3 (disabled)
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="my-5">Files</h3>
+
+                <div class="form-file">
+                    <input
+                        type="file"
+                        class="form-file-input"
+                        id="customfile"
+                    >
+                    <label class="form-file-label" for="customfile">
+                        <span class="form-file-text">Choose file...</span>
+                        <span class="form-file-button">Browse</span>
+                    </label>
+                </div>
+
+                <h3 class="my-5">Range</h3>
+                <label class="form-label" for="customRange1">Custom range</label>
+                <input
+                    type="range"
+                    class="form-range"
+                    id="customRange1"
+                />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="parent_child_check.js"></script>
