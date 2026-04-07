@@ -6,9 +6,8 @@ function showTab(tabId) {
     document.getElementById(tabId).classList.add("active");
 }
 
-// =====================
-// 🧠 VIKTORIIN
-// =====================
+
+// VIKTORIIN
 const questions = [
     { question: "Eesti pealinn?", answers: ["Tallinn", "Tartu", "Narva"], correct: 0 },
     { question: "2 + 2?", answers: ["3", "4", "5"], correct: 1 },
@@ -96,9 +95,7 @@ function clearQuizScores() {
     displayQuizScores();
 }
 
-// =====================
-// 🎯 ARVA NUMBER
-// =====================
+//ARVA NUMBER
 let randomNumber;
 let guessAttempts = 0;
 let playerGuess = "";
@@ -136,7 +133,7 @@ function checkGuess() {
     if (guess === randomNumber) {
         correct = true;
         document.getElementById("guessResult").textContent =
-            `🎉 Õige! Katsed: ${guessAttempts}`;
+            `Õige! Katsed: ${guessAttempts}`;
     } else {
         document.getElementById("guessResult").textContent = "❌ Vale!";
     }

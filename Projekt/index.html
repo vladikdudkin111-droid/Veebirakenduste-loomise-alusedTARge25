@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h1>🎮 Tere tulemast!</h1>
+<h1>Tere tulemast!</h1>
 
 <!-- 🔹 NAV -->
 <div class="tabs">
@@ -16,16 +16,16 @@
     <button onclick="showTab('guess')">Arva number</button>
 </div>
 
-<!-- 🏠 HOME -->
+<!--HOME -->
 <section id="home" class="tab active">
     <h2>Tere!</h2>
-    <p>Vali mäng ja alusta 😄</p>
+    <p>Vali mäng ja alusta</p>
 </section>
 
-<!-- 🧠 QUIZ -->
+<!--QUIZ -->
 <section id="quiz" class="tab">
 
-    <h2>🧠 Viktoriin</h2>
+    <h2>Viktoriin</h2>
 
     <input type="text" id="playerName" placeholder="Sisesta nimi" oninput="handleInput()">
     <br>
@@ -41,18 +41,18 @@
     <p id="quizResult"></p>
 
     <div class="actions">
-        <button class="new" onclick="startQuiz()">🔄 Uus mäng</button>
+        <button class="new" onclick="startQuiz()">Uus mäng</button>
         <button onclick="clearQuizScores()">🗑 Tühjenda tulemused</button>
     </div>
 
-    <h3>🏆 Parimad mängijad</h3>
+    <h3>Parimad mängijad</h3>
     <ul id="quizScores"></ul>
 </section>
 
-<!-- 🎯 GUESS -->
+<!--GUESS -->
 <section id="guess" class="tab">
 
-    <h2>🎯 Arva number</h2>
+    <h2>Arva number</h2>
 
     <input type="text" id="playerGuessName" placeholder="Sisesta nimi">
     <br>
@@ -67,11 +67,11 @@
     <p id="guessResult"></p>
 
     <div class="actions">
-        <button class="new" onclick="startGuess()">🔄 Uus mäng</button>
+        <button class="new" onclick="startGuess()">Uus mäng</button>
         <button onclick="clearGuessScores()">🗑 Tühjenda tulemused</button>
     </div>
 
-    <h3>🏆 Parimad mängijad</h3>
+    <h3>Parimad mängijad</h3>
     <ul id="guessScores"></ul>
 </section>
 
